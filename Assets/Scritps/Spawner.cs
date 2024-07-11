@@ -26,7 +26,7 @@ public class Spawner : MonoBehaviour
             Enemy spawnedEnemy = Instantiate(_prefab, transform.position, Quaternion.identity);
             Enemy target = _target;
 
-            spawnedEnemy.GetTarget(target);
+            spawnedEnemy.TargetEnemy(target);
         }
     } 
 }

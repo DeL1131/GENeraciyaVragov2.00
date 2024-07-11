@@ -76,6 +76,7 @@ GameObject:
   - component: {fileID: 2901558920910376016}
   - component: {fileID: -7967536367468133021}
   - component: {fileID: 7850206444968683935}
+  - component: {fileID: 5689623792655077939}
   m_Layer: 0
   m_Name: Slime_01_Viking 1
   m_TagString: Untagged
@@ -160,7 +161,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d982c61c20a57e347879b39ad62ba6f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 3
+  _speed: 8
+  _AttackRange: 0
 --- !u!114 &7850206444968683935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,6 +173,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b87d7e829e4afc4a8b7aee500f4d5e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5689623792655077939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3238545900639626094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f559918a52ef7684bbc29a2ba97eadf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &4146795683800581167

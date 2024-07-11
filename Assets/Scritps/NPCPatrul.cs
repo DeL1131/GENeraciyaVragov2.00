@@ -9,12 +9,12 @@ public class NPCPatrul : MonoBehaviour
     private Transform _target;
     private Enemy _enemy;
 
-    private int _numberOfPlaceInArrayPlaces;
+    private int _numberPoint;
 
     private void Start()
     {
         _enemy = GetComponent<Enemy>();
-        _target = _allPlacesPoint[_numberOfPlaceInArrayPlaces];       
+        _target = _allPlacesPoint[_numberPoint];       
     }
 
     private void Update()
@@ -25,22 +25,21 @@ public class NPCPatrul : MonoBehaviour
         Quaternion lookRotation = Quaternion.LookRotation(direction);
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * _enemy.Speed);
 
-
         transform.position = Vector3.MoveTowards(transform.position, _target.position, _enemy.Speed * Time.deltaTime);
 
         if (transform.position == _target.position)
         {
-            NextPlaceTakerLogic();
+            NextPoint();
         }
     }
 
-    private void NextPlaceTakerLogic()
+    private void NextPoint()
     {
-        _numberOfPlaceInArrayPlaces++;
+        _numberPoint++;
 
-        if (_numberOfPlaceInArrayPlaces == _allPlacesPoint.Length)
-            _numberOfPlaceInArrayPlaces = 0;
+        if (_numberPoint == _allPlacesPoint.Length)
+            _numberPoint = 0;
 
-        _target = _allPlacesPoint[_numberOfPlaceInArrayPlaces].transform;
+        _target = _allPlacesPoint[_numberPoint].transform;
     }
 }

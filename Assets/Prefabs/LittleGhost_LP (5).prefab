@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 5446477390807014372}
   - component: {fileID: -8251599587888250632}
   - component: {fileID: -1212730114588843854}
+  - component: {fileID: 934589035176521649}
   m_Layer: 0
   m_Name: LittleGhost_LP (5)
   m_TagString: Untagged
@@ -154,7 +155,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d982c61c20a57e347879b39ad62ba6f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 3
+  _speed: 8
+  _AttackRange: 0
 --- !u!114 &-1212730114588843854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,6 +167,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b87d7e829e4afc4a8b7aee500f4d5e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &934589035176521649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5446477390807014373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f559918a52ef7684bbc29a2ba97eadf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &5446477390958229031

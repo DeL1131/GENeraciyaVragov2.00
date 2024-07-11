@@ -10,11 +10,10 @@ public class Enemy : MonoBehaviour
 
     private void Awake()
     {
-        NPCPatrul npcPatrul = GetComponent<NPCPatrul>();
         Speed = _speed;
     }
 
-    public void GetTarget(Enemy target)
+    public void TargetEnemy(Enemy target)
     {
         Target = target;
     }
