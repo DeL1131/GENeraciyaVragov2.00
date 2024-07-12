@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Destroy : MonoBehaviour
+public class ObjectDestroyer : MonoBehaviour
 {
     public void DestroyObject()
     {

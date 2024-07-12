@@ -1,17 +1,17 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Enemy))]
-[RequireComponent (typeof(Destroy))]
+[RequireComponent (typeof(ObjectDestroyer))]
 
-public class NewBehaviourScript : MonoBehaviour
+public class TargetPursuit : MonoBehaviour
 {
     private Enemy _enemy;
-    private Destroy _destroy;
+    private ObjectDestroyer _destroy;
 
     private void Awake()
     {
         _enemy = GetComponent<Enemy>();
-        _destroy = GetComponent<Destroy>();
+        _destroy = GetComponent<ObjectDestroyer>();
     }
 
     private void Update()
